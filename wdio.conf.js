@@ -19,10 +19,11 @@ exports.config = {
     specs: [
         './test/elements.js',
         './test/defaultFunctionality.js'
+       // './test/toyota.js'
     ],
     // Patterns to exclude.
     exclude: [
-        // 'path/to/excluded/files'
+        './test/elements.js'
     ],
     //
     // ============
@@ -66,7 +67,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'silent',
     //
     // Set specific log levels per logger
     // loggers:
@@ -91,8 +92,9 @@ exports.config = {
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
     baseUrl: 'https://likejean.github.io/homework-5/',
-    //
-    // Default timeout for all waitFor* commands.
+    //baseUrl:'https://www.toyota.com/',
+
+// Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
     //
     // Default timeout in milliseconds for request
